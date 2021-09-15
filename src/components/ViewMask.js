@@ -39,7 +39,7 @@ class ViewMask extends Component<Props, State> {
     }),
   };
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (this.props.position !== nextProps.position || this.props.size !== nextProps.size) {
       this.animate(nextProps.size, nextProps.position);
     }
